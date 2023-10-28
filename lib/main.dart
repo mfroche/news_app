@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color(0xFFFCFCFC),
         body: Container(
           padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-          child: Column(
+          child: const Column(
             children: [
               Text(
                 'Welcome back!',
