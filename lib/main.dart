@@ -16,30 +16,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Gellix',
         useMaterial3: true,
       ),
-      home: Scaffold(
-        backgroundColor: const Color(0xFFFCFCFC),
-        body: Container(
-          padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-          child: const Column(
-            children: [
-              Text(
-                'Welcome back!',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                'Monday, 3 October',
-                style: TextStyle(
-                  color: Color(0xFF9397A0),
-                  fontSize: 13,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
