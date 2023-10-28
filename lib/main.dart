@@ -19,11 +19,10 @@ class MyApp extends StatelessWidget {
       home: const Scaffold(
         backgroundColor: Colors.white,
         body: Container(
-          padding: ,
           child: Column(
             children: [
               Row(
-                
+                children: [Text('HELLOOO WORLD')],
               )
             ],
           ),
