@@ -18,9 +18,9 @@ class ShortsCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(11),
             boxShadow: [
               BoxShadow(
-                color: Colors.black45.withOpacity(0.04),
+                color: Colors.black45.withOpacity(0.1),
                 spreadRadius: 1,
-                blurRadius: 6,
+                blurRadius: 7,
                 offset: Offset(3, 2), // changes position of shadow
               ),
             ],

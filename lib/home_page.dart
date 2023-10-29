@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/article_card.dart';
+import 'package:news_app/bottom_nav_bar.dart';
 import 'package:news_app/hashtag_section.dart';
 import 'package:news_app/header_home_page.dart';
 import 'package:news_app/search_bar_home_page.dart';
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.fromLTRB(18, 0, 18, 0),
-          child: SingleChildScrollView(
+          child: const SingleChildScrollView(
             child: Column(
               children: [
                 SizedBox(height: 20),
@@ -51,11 +52,13 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 30)
               ],
             ),
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }

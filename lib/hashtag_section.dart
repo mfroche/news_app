@@ -11,31 +11,31 @@ class HashtagSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          '#Health',
+          '#Health  ',
           style: TextStyle(
             color: Color(0xFF9397A0),
-            fontSize: 13,
+            fontSize: 11,
           ),
         ),
         Text(
-          '#Music',
+          '#Music  ',
           style: TextStyle(
             color: Color(0xFF9397A0),
-            fontSize: 13,
+            fontSize: 11,
           ),
         ),
         Text(
-          '#Technology',
+          '#Technology  ',
           style: TextStyle(
             color: Color(0xFF9397A0),
-            fontSize: 13,
+            fontSize: 11,
           ),
         ),
         Text(
-          '#Travel',
+          '#Travel  ',
           style: TextStyle(
             color: Color(0xFF9397A0),
-            fontSize: 13,
+            fontSize: 11,
           ),
         ),
       ],
