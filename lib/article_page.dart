@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/author_page.dart';
 import 'package:news_app/bottom_nav_bar.dart';
 import 'package:news_app/home_page.dart';
 
@@ -90,27 +91,36 @@ class ArticlesPage extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                    padding: EdgeInsets.all(8),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Colors.black26,
-                          width: 1,
-                        )),
-                    child: Row(
-                      children: [
-                        Image.asset("assets/images/profile3.png"),
-                        Text(
-                          '   Keanu Carpent  May 17 • 8 min read',
-                          style: TextStyle(
-                            color: Color(0xFF9397A0),
-                            fontSize: 9,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) {
+                          return AuthorPage();
+                        }),
+                      );
+                    },
+                    child: Container(
+                      margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: Colors.black26,
+                            width: 1,
+                          )),
+                      child: Row(
+                        children: [
+                          Image.asset("assets/images/profile3.png"),
+                          Text(
+                            '   Keanu Carpent  May 17 • 8 min read',
+                            style: TextStyle(
+                              color: Color(0xFF9397A0),
+                              fontSize: 9,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Text(
