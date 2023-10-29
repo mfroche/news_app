@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/article_card.dart';
+import 'package:news_app/hashtag_section.dart';
+import 'package:news_app/header_home_page.dart';
+import 'package:news_app/search_bar_home_page.dart';
+import 'package:news_app/shorts_header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -11,39 +16,31 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xFFFCFCFC),
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.fromLTRB(18, 0, 0, 0),
-          child: Column(
-            children: [
-              const SizedBox(height: 16),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
-                    child: Image.asset("assets/images/profile.png"),
-                  ),
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+          padding: const EdgeInsets.fromLTRB(18, 0, 18, 0),
+          child: const SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+                HomePageHeader(),
+                SizedBox(height: 25),
+                HomePageSearchBar(),
+                SizedBox(height: 19),
+                HashtagSection(),
+                SizedBox(height: 25),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
                     children: [
-                      Text(
-                        'Welcome back!',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        'Monday, 3 October',
-                        style: TextStyle(
-                          color: Color(0xFF9397A0),
-                          fontSize: 13,
-                        ),
-                      ),
+                      ArticleCard(),
+                      SizedBox(width: 10),
+                      ArticleCard(),
                     ],
                   ),
-                ],
-              ),
-            ],
+                ),
+                SizedBox(height: 25),
+                ShortsHeader()
+              ],
+            ),
           ),
         ),
       ),
