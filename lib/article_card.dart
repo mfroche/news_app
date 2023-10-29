@@ -9,9 +9,18 @@ class ArticleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
+      margin: EdgeInsets.fromLTRB(0, 3, 0, 3),
       decoration: BoxDecoration(
         color: Color(0xFFFFFFFF),
         borderRadius: BorderRadius.circular(11),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black45.withOpacity(0.04),
+            spreadRadius: 1,
+            blurRadius: 3,
+            offset: Offset(3, 2), // changes position of shadow
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,9 +36,9 @@ class ArticleCard extends StatelessWidget {
           ),
           SizedBox(height: 17),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
@@ -56,12 +65,13 @@ class ArticleCard extends StatelessWidget {
                   )
                 ],
               ),
+              SizedBox(width: 40),
               Container(
                 height: 37,
                 width: 37,
                 padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF5474FD),
+                  color: const Color(0xFFEFF5F4),
                   borderRadius: BorderRadius.circular(11),
                 ),
                 child: Center(child: Image.asset("assets/icons/message.png")),
