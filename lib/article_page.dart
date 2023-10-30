@@ -66,7 +66,7 @@ class ArticlesPage extends StatelessWidget {
                 Positioned(
                   top: 250,
                   child: Container(
-                    padding: EdgeInsets.fromLTRB(15, 20, 15, 15),
+                    padding: const EdgeInsets.fromLTRB(15, 20, 15, 15),
                     width: MediaQuery.of(context).size.width,
                     decoration: const BoxDecoration(
                       color: Colors.white,
@@ -80,7 +80,7 @@ class ArticlesPage extends StatelessWidget {
               ],
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(17, 0, 17, 0),
+              padding: const EdgeInsets.fromLTRB(17, 0, 17, 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
