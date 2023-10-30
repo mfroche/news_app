@@ -53,7 +53,7 @@ class ArticleCard extends StatelessWidget {
                       padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
                       child: Image.asset("assets/images/profile2.png"),
                     ),
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
