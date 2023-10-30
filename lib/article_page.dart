@@ -95,7 +95,7 @@ class ArticlesPage extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) {
-                          return AuthorPage();
+                          return const AuthorPage();
                         }),
                       );
                     },
