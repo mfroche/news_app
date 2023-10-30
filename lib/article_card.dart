@@ -36,7 +36,7 @@ class ArticleCard extends StatelessWidget {
           children: [
             Image.asset("assets/images/beach.png"),
             SizedBox(height: 18),
-            Text(
+            const Text(
               'Feel the thrill on the only\nsurf simulator in Maldives 2022',
               style: TextStyle(
                 fontSize: 15,
