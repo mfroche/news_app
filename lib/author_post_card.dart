@@ -31,7 +31,7 @@ class AuthorPostCard extends StatelessWidget {
               ),
             ),
             Text(
-              "Iran's raging protests\nFifth Iranian paramilitary me...",
+              "Iran's raging protests\nFifth Iranian paramilit...",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

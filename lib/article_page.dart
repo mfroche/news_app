@@ -68,7 +68,7 @@ class ArticlesPage extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.fromLTRB(15, 20, 15, 15),
                     width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -84,7 +84,7 @@ class ArticlesPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Unravel mysteries\nof the Maldives',
                     style: TextStyle(
                       fontSize: 25,
@@ -112,7 +112,7 @@ class ArticlesPage extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset("assets/images/profile3.png"),
-                          Text(
+                          const Text(
                             '   Keanu Carpent  May 17 • 8 min read',
                             style: TextStyle(
                               color: Color(0xFF9397A0),
@@ -123,7 +123,7 @@ class ArticlesPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     'Just say anything, George, say what ever natural, the first thing that comes to your mind. Take that you mutated son-of-a-bitch. My pine, why you.You space bastard, you killed a pine. You do? Yeah, its 8:00. Hey, McFly, I thought I told you never',
                     style: TextStyle(
                       fontSize: 14,

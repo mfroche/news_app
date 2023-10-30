@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/author_post_card.dart';
 import 'package:news_app/header_author_page.dart';
+import 'package:news_app/popular_author_post_section.dart';
 import 'package:news_app/post_section_header.dart';
 import 'package:news_app/stats_section.dart';
 
@@ -15,7 +16,7 @@ class AuthorPage extends StatelessWidget {
           child: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 14, vertical: 25),
-          child: Column(
+          child: const Column(
             children: [
               AuthorPageHeader(),
               SizedBox(height: 15),
@@ -27,7 +28,12 @@ class AuthorPage extends StatelessWidget {
               StatsSection(),
               SizedBox(height: 25),
               PostSectionHeader(),
-              AuthorPostCard()
+              SizedBox(height: 20),
+              AuthorPostCard(),
+              SizedBox(height: 20),
+              AuthorPostCard(),
+              SizedBox(height: 30),
+              PopularAuthorPostSection()
             ],
           ),
         ),
